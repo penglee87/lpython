@@ -55,7 +55,7 @@ if __name__ == '__main__':
     manager.run()
     
 #(venv) $ python hello.py runserver --help
-#(venv) $ python hello.py runserver --host 0.0.0.0
+#(venv) $ python hello.py runserver --host 0.0.0.0 --port 5001
     
     
 #3a jinja2模板
