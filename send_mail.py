@@ -35,4 +35,8 @@ password = ******
 to_addr = 380517767@qq.com
 smtp_server = smtp.163.com
 
+from_addr = lipeng@qccr.com
+password = ******
+to_addr = 380517767@qq.com
+smtp_server = smtp.exmail.qq.com
 '''
