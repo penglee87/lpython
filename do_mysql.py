@@ -23,7 +23,8 @@ cursor.close()
 
 # 运行查询:
 cursor = conn.cursor()
-cursor.execute('select * from user_py where id = %s', ('1',))
+a='1'
+cursor.execute('select * from user_py where id = %s', (a,))
 values = cursor.fetchall()
 print(values)
 # 关闭Cursor和Connection:
