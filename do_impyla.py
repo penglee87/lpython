@@ -47,7 +47,7 @@ pip install impyla
 sudo apt-get  build-dep  gcc
 for python2 use:
 sudo apt-get install python-dev 
-for python3 use:
+for python3 use:(ubuntu14.04 自带3.4版本仍有问题)
 sudo apt-get install python3-dev
 
 sudo apt-get install libsasl2-dev
