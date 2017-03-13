@@ -50,7 +50,7 @@ def saveFile(values):
 saveFile(values)
 
 from_addr = 'lipeng@qccr.com'
-password = 'Qc000000'
+password = '******'
 #to_addr = 'lipeng@qccr.com'
 to_addr = ['lipeng@qccr.com','zhangluo@qccr.com']
 
