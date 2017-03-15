@@ -5,14 +5,14 @@ from flask_mail import Mail
 from flask_mail import Message
 import os
 
-#²âÊÔ³É¹¦,²¿·Ö²ÎÊı×÷ÓÃ²»Ã÷
+#æµ‹è¯•æˆåŠŸ,éƒ¨åˆ†å‚æ•°ä½œç”¨ä¸æ˜
 app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.163.com'
 app.config['MAIL_PORT'] = 25
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'penglee87@163.com'
 app.config['MAIL_PASSWORD'] = '******'
-app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = '[Flasky]'  #ÓÊ¼şÖ÷Ìâ
+app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = '[Flasky]'  #é‚®ä»¶ä¸»é¢˜
 #app.config['FLASKY_MAIL_SENDER'] = 'penglee87@163.com'
 #app.config['FLASKY_ADMIN'] = 'penglee87@163.com'
 mail = Mail(app)
@@ -26,10 +26,10 @@ app.config['FLASKY_ADMIN'] = os.environ.get('FLASKY_ADMIN')
 
 @app.route("/")
 def index():
-    #Message(Ö÷Ìâ,·¢¼şÈË,ÊÕ¼şÈË)
+    #Message(ä¸»é¢˜,å‘ä»¶äºº,æ”¶ä»¶äºº)
     msg = Message("Hello",
                   sender="penglee87@163.com",
-                  recipients=["lipeng@qccr.com"])
+                  recipients=["lipeng@163.com"])
                   
     msg.body = "testing"
     msg.html = "<b>testing</b>"
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 """
 msg = Message("Hello",
               sender="penglee87@163.com",
-              recipients=["lipeng@qccr.com"])
+              recipients=["lipeng@163.com"])
 msg.body = "testing"
 msg.html = "<b>testing</b>"
 
