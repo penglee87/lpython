@@ -22,8 +22,8 @@ def find_str(filename):
     with open(filename,'r+', encoding='utf-8', errors='ignore') as fh:
         #按文件查找
         file_content = fh.read()
-        if 'qccr' in file_content:
-            new_content=file_content.replace('qccr','gmail')
+        if 'tuhu' in file_content:
+            new_content=file_content.replace('tuhu','gmail')
             fh.seek(0, 0)
             fh.write(new_content)
             print(filename)
@@ -32,7 +32,7 @@ def find_str(filename):
         '''
         lines = fh.readlines()
         for line in lines:
-            if 'qccr' in line:
+            if 'tuhu' in line:
                 print(filename)
         '''
 
