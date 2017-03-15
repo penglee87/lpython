@@ -16,7 +16,7 @@ mail = Mail(app)
 
 msg = Message("Hello",
               sender="penglee87@163.com",
-              recipients=["lipeng@qccr.com"])
+              recipients=["lipeng@163.com"])
 msg.body = "testing"
 msg.html = "<b>testing</b>"
 
